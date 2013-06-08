@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, H264Android!</string>
+    <string name="app_name">小车集成控制器</string>
+    <string name="play">播放</string>
+    <string name="exit">退出</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_ctrl">小车控制主界面</string>
+
+</resources>

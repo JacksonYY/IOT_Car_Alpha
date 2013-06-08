@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference android:dialogMessage="请输入标准的IPV4地址,不要有空格" android:key="CarIP" android:title="小车IP" android:dialogTitle="小车IP"/>
+
+</PreferenceScreen>

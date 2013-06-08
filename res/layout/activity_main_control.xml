@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingLeft="@dimen/padding_small"
+    android:paddingTop="@dimen/padding_small" >
+
+    <Button
+        android:id="@+id/Car_STOP_B"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/Car_SPEEDUP_B"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="刹车"
+        android:textSize="@dimen/padding_large" />
+
+    <Button
+        android:id="@+id/Car_SPEEDUP_B"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/Car_BACK_B"
+        android:layout_alignParentRight="true"
+        android:text="加速"
+        android:textSize="@dimen/padding_large" />
+
+    <Button
+        android:id="@+id/Car_BACK_B"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/Car_SPEEDUP_B"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/padding_small"
+        android:text="倒车"
+        android:textSize="@dimen/padding_large" />
+
+    <mike.mapview.OfflineMapView
+        android:id="@+id/Map_IMAGE"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Map_IMAGE"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColorLink="@color/black" />
+
+    <Button
+        android:id="@+id/Car_MOVE_B"
+        android:layout_width="80dp"
+        android:layout_height="800dp"
+        android:layout_above="@+id/Car_SPEEDUP_B"
+        android:layout_alignLeft="@+id/Car_SPEEDUP_B"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Car_STOP_B"
+        android:text="匀速"
+        android:textSize="@dimen/padding_large" />
+
+    <h264.com.VView
+        android:id="@+id/Video_CAM1_V"
+        android:layout_width="280dp"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/Car_STOP_B"
+        android:layout_toLeftOf="@+id/Car_STOP_B"
+        android:layout_toRightOf="@+id/textView4" />
+
+    <ToggleButton
+        android:id="@+id/Car_CTRL_TB"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="ToggleButton"
+        android:textOff="控制"
+        android:textOn="控制"
+        android:textSize="14dp" />
+
+    <ToggleButton
+        android:id="@+id/Car_VIDEO_TB"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Car_CTRL_TB"
+        android:layout_alignBottom="@+id/Car_CTRL_TB"
+        android:layout_toRightOf="@+id/Car_CTRL_TB"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="ToggleButton"
+        android:textOff="视频"
+        android:textOn="视频"
+        android:textSize="14dp" />
+
+    <ToggleButton
+        android:id="@+id/Car_DATA_TB"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Car_VIDEO_TB"
+        android:layout_alignBottom="@+id/Car_VIDEO_TB"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toRightOf="@+id/Car_VIDEO_TB"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="ToggleButton"
+        android:textOff="数据"
+        android:textOn="数据"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Car_CTRL_TB"
+        android:layout_below="@+id/Car_CTRL_TB"
+        android:text="命令:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Car_CTRL_TB"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/padding_large" />
+
+</RelativeLayout>

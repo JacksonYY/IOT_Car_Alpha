@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mike.com"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="小车控制器"
+        android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar" android:logo="@drawable/ic_launcher" android:killAfterRestore="true" android:allowBackup="true">
+        <activity
+            android:name=".MainCtrlActivity"
+            android:label="主控制界面" android:screenOrientation="landscape" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mike.preference.SettingActivity"
+            android:label="设置板面"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
+    
+    
+    
+<uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
